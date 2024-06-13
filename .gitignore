@@ -2,6 +2,7 @@
 *.dll
 *.so
 *.dylib
+./job-openings-api
 
 # Test Binary
 
@@ -10,5 +11,4 @@
 # Coverage
 
 *.out
-
 db/
