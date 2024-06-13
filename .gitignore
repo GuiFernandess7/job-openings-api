@@ -2,7 +2,6 @@
 *.dll
 *.so
 *.dylib
-./job-openings-api
 
 # Test Binary
 
