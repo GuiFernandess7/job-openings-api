@@ -4,6 +4,8 @@ import (
 	"github.com/GuiFernandess7/job-openings-api/docs"
 	handler "github.com/GuiFernandess7/job-openings-api/handler"
 	"github.com/gin-gonic/gin"
+	swaggerfiles "github.com/swaggo/files"
+	ginSwagger "github.com/swaggo/gin-swagger"
 )
 
 func initializeRoutes(router *gin.Engine){
@@ -18,5 +20,5 @@ func initializeRoutes(router *gin.Engine){
 		v1.PUT("/opening", handler.UpdateOpeningHandler)
 		v1.GET("/openings", handler.ListOpeningHandler)
 	}
-	//router.GET("/swagger/*any", ginSwagger.WrapHandler(swaggerfiles.Handler))
+	router.GET("/swagger/*any", ginSwagger.WrapHandler(swaggerfiles.Handler))
 }
