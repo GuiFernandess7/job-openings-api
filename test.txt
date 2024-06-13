@@ -1,0 +1,17 @@
+Parece que o caminho do seu $GOPATH/bin não está configurado corretamente. Ele está definido como /home/gsampaio/go/bin/bin, o que parece ser um erro.
+
+Normalmente, o caminho correto para o diretório $GOPATH/bin seria algo como /home/gsampaio/go/bin, sem o "bin" extra no final.
+
+Para corrigir isso, você pode fazer o seguinte:
+
+Abra seu arquivo de configuração .bashrc ou .bash_profile em um editor de texto, como o nano ou o vim.
+
+Localize a linha onde você definiu a variável $GOPATH.
+
+Corrija o caminho para que aponte diretamente para o diretório $GOPATH, sem incluir bin novamente no final.
+
+Por exemplo, se você definiu $GOPATH como /home/gsampaio/go, o caminho para o diretório $GOPATH/bin seria /home/gsampaio/go/bin.
+
+Salve as alterações no arquivo e feche-o.
+
+Após salvar as alterações, reinicie o seu terminal ou execute o comando source no arquivo de configuração para aplicar as mudanças:
