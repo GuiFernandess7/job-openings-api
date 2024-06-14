@@ -6,6 +6,7 @@
 # Test Binary
 
 *.test
+.env
 
 # Coverage
 
